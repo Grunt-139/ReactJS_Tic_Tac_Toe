@@ -1,0 +1,45 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+
+    /*Found this awesome hack for reversing the direction here: https://stackoverflow.com/questions/25695000/how-to-display-a-reverse-ordered-list-in-html*/
+    ol.reversed {
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+
+      padding-left:0px;
+      margin-left:2.15em;
+
+    }
+    ol.reversed > li {
+        -moz-transform: rotate(-180deg);
+        -webkit-transform: rotate(-180deg);
+        transform: rotate(-180deg);
+    }
+  
+
+  
+  .status {
+    margin-bottom: 10px;
+  }
+
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 20px;
+  }
+  
+  /*Added so the current move button would be highlighted*/
+  .selected-button{
+    font-weight: bolder;
+  }
